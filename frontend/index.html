@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Historical Places Explorer</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>#map { height: 500px; width: 100%; }</style>
+</head>
+<body>
+  <h1>Historical Places Explorer</h1>
+
+  <input type="text" id="searchBox" placeholder="Search by name">
+  <button id="searchBtn">Search</button>
+
+  <select id="eraFilter">
+    <option value="">All Eras</option>
+    <option value="Ancient">Ancient</option>
+    <option value="Medieval">Medieval</option>
+    <option value="Modern">Modern</option>
+  </select>
+
+  <div id="map"></div>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
